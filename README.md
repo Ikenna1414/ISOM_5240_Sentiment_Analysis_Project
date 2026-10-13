@@ -2,15 +2,11 @@
 
 **ISOM5240 Group 7** - SHI Yuebing and Ikenna Odikamnoro
 
-A transformer-based financial news intelligence prototype for the Wealthsimple business case. FinSignal produces sentiment, corporate event labels and confidence scores for single news items and CSV batches.
-
-## Current status
-
-Project implementation and verified dataset snapshots are prepared. Event annotation review, transformer training, measured model comparison and public deployment are pending. The app shows a training-pending message until selected models are configured.
+A transformer-based financial news sentiment analysis prototype for the Wealthsimple business case. FinSignal produces sentiment, corporate event labels and confidence scores for single news items and CSV batches.
 
 ## Two pipelines
 
-- Sentiment: positive, neutral or negative. Train DistilBERT and RoBERTa candidates; compare with unchanged ProsusAI/finbert.
+- Sentiment: positive, neutral or negative. Train DistilBERT and RoBERTa; compare with unchanged ProsusAI/finbert.
 - Corporate events: earnings/guidance, mergers/acquisitions, regulatory/legal, financing, management change, product/business expansion or other. Fine-tune DistilBERT and RoBERTa after reviewing event labels.
 
 Select on validation accuracy plus CPU runtime. Evaluate the selected application models on frozen held-out tests. Model scores are uncalibrated confidence, not investment advice.
@@ -89,4 +85,4 @@ For Streamlit Community Cloud, use this repository's root app.py and Python 3.11
 
 ## Limitations
 
-Source texts are short financial tweets, not a validated benchmark for Canadian news or long articles. Input truncates to 256 tokens. Exact-text deduplication has passed; near-duplicate and related-story review remains necessary. No measured accuracy, winning model, live deployment or investment benefit is claimed yet. This is an academic prototype, with no Wealthsimple affiliation or endorsement.
+Source texts are short financial tweets, not a validated benchmark for Canadian news or long articles. Input truncates to 256 tokens. Exact-text deduplication has passed; near-duplicate and related-story review remains necessary. This is an academic prototype.
