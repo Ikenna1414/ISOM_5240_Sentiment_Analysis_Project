@@ -1,0 +1,95 @@
+{
+  "topic": {
+    "repo": "zeroshot/twitter-financial-news-topic",
+    "revision": "acbc8af2a35ccf0916124efcbe9e6cf25f191012",
+    "license": "MIT",
+    "files": {
+      "topic_train.csv": {
+        "rows": 16990,
+        "sha256": "63b9ea8183728dd5ddc6a57289341556509ddc0a8d037616519319a316b54490",
+        "label_counts": {
+          "2": 3545,
+          "18": 2118,
+          "14": 1822,
+          "9": 1557,
+          "5": 987,
+          "16": 985,
+          "1": 837,
+          "19": 823,
+          "7": 624,
+          "6": 524,
+          "15": 501,
+          "17": 495,
+          "12": 487,
+          "13": 471,
+          "4": 359,
+          "3": 321,
+          "0": 255,
+          "8": 166,
+          "10": 69,
+          "11": 44
+        }
+      },
+      "topic_valid.csv": {
+        "rows": 4117,
+        "sha256": "67396d6cd4a21c3755de783f20fb5842f12ae8edb9367eed5d2644dd85ca9243",
+        "label_counts": {
+          "2": 852,
+          "18": 528,
+          "14": 415,
+          "9": 336,
+          "16": 249,
+          "5": 242,
+          "1": 214,
+          "19": 197,
+          "7": 160,
+          "6": 146,
+          "15": 125,
+          "12": 119,
+          "13": 116,
+          "17": 112,
+          "4": 97,
+          "3": 77,
+          "0": 73,
+          "8": 32,
+          "11": 14,
+          "10": 13
+        }
+      }
+    }
+  },
+  "sentiment": {
+    "repo": "zeroshot/twitter-financial-news-sentiment",
+    "revision": "ccbe24de388e287beb92dd393a335c376b350ac3",
+    "license": "MIT",
+    "files": {
+      "sent_train.csv": {
+        "rows": 9543,
+        "sha256": "71aa99d0d37feced03c999ec23b5b25302c92f39d69b6acb0a37aa076c5420e8",
+        "label_counts": {
+          "2": 6178,
+          "1": 1923,
+          "0": 1442
+        }
+      },
+      "sent_valid.csv": {
+        "rows": 2388,
+        "sha256": "31ea8274c98b52212daa68f2fb962811bf1913c1efe51b99765c8e2311806de6",
+        "label_counts": {
+          "2": 1566,
+          "1": 475,
+          "0": 347
+        }
+      }
+    }
+  },
+  "distilbert/distilbert-base-uncased": {
+    "revision": "12040accade4e8a0f71eabdb258fecc2e7e948be"
+  },
+  "FacebookAI/roberta-base": {
+    "revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b"
+  },
+  "ProsusAI/finbert": {
+    "revision": "0bc2ac10dda6929bcb1f77ccc43c7ec5c424f031"
+  }
+}
